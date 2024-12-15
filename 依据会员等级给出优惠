@@ -1,0 +1,27 @@
+package test;
+
+import java.util.Scanner;
+public class test_05 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter your member ranks:");
+        int rank = sc.nextInt();
+        System.out.println("Enter the value of commodity:");
+        int commodity = sc.nextInt();
+        if(rank == 1){
+            System.out.println("the value of commodity is"+(commodity*0.9));
+        }
+        else if(rank == 2){
+            System.out.println("the value of commodity is"+(commodity*0.8));
+        }
+        else if(rank == 3){
+            System.out.println("the value of commodity is"+(commodity*0.7));
+        }
+        else if(rank > 3){
+            System.out.println("you lie\n"+"Publish coming\n"+"the value of commodity is"+(commodity*2));
+        }
+        else{
+            System.out.println("the value of commodity is"+commodity);
+        }
+    }
+}
